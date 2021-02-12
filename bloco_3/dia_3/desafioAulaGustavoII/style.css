@@ -1,0 +1,9 @@
+.goomba{
+    position: absolute;
+    z-index: 1;
+}
+
+.super-mario{
+    position: absolute;
+    z-index: 2;
+}
