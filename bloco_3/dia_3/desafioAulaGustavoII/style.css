@@ -18,7 +18,9 @@
 }
 
 .word{
-
+    position: absolute;
+    right: 230px;
+    z-index: 3;
 }
 
 .bowser{
