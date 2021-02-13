@@ -10,3 +10,19 @@
     position: absolute;
     z-index: 2;
 }
+
+.baloon{
+    position: absolute;
+    right: 200px;
+    width: 150px;
+}
+
+.word{
+
+}
+
+.bowser{
+    position: absolute;
+    right: 0px;/*vai garantir que o bowser fique rente a direita da tela*/
+    width: 200px;
+}
