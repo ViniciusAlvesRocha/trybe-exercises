@@ -8,19 +8,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos doDesenvolvimento Web :white_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
+##### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
 - [x] 1-5: _Shell Script_
 
-##### Bloco 2: Git & GitHub :white_check_mark:
+##### Bloco 2: Git & GitHub
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS :hourglass_flowing_sand:
+##### Bloco 3: Introdução - HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de pÃ¡gina_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -48,7 +48,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avanÃ§ado
+##### Bloco 6: HTML & CSS avançado
 
 - [ ] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -57,7 +57,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
-##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
+##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
@@ -85,7 +85,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 10-3: _Jest - Simulando comportamentos_
 - [ ] 10-4: _[Projeto - Jest Assíncronos e Mocking]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end
 
 ##### Bloco 11: Introdução - React
 
