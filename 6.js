@@ -1,6 +1,6 @@
-piece = "rainha"
+piece = "RAINHA"
 
-switch(piece){
+switch(piece.toLowerCase()){
     case "peao":
         messege = "move-se uma casa para a frente"
     break;
