@@ -1,4 +1,6 @@
-
+/*
+2. Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+*/
 
 function maior(array) {
     let maior = 0
