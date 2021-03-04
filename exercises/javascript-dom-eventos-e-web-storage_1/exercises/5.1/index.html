@@ -39,11 +39,12 @@
       </div>
     </div>
     <script>
-       descriptionFutureTwoYeras()
-       updateBackgroundToColorTybe()
-       changeColorSquadToWhite()
-       carrectHandingh1()
-       paragraphsToUpperCase()
+        descriptionFutureTwoYeras()
+        updateBackgroundToColorTybe()
+        changeColorSquadToWhite()
+        carrectHandingh1()
+        paragraphsToUpperCase()
+        selectContentTagsParagrapgInConsole()
 
        function descriptionFutureTwoYeras() {
             paragrapyFuture = document.getElementById('future-two-years')
@@ -68,7 +69,14 @@
        function paragraphsToUpperCase() {
             paragraps = document.getElementsByTagName('p')
             for (let paragrap in paragraps) {
-                paragraps[paragrap].innerText = paragraps[paragrap].innerText.toUpperCase()
+                paragraps[paragrap].innerText = (paragraps[paragrap].innerText).toUpperCase()
+            }
+       }
+
+       function selectContentTagsParagrapgInConsole() {
+        paragraps = document.getElementsByTagName('p')
+            for (let paragrap in paragraps) {
+                console.log(paragraps[paragrap].innerText)
             }
        }
     </script>
