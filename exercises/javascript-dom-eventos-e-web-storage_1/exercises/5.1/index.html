@@ -43,6 +43,7 @@
        updateBackgroundToColorTybe()
        changeColorSquadToWhite()
        carrectHandingh1()
+       paragraphsToUpperCase()
 
        function descriptionFutureTwoYeras() {
             paragrapyFuture = document.getElementById('future-two-years')
@@ -62,6 +63,13 @@
        function carrectHandingh1() {
             title = document.getElementsByClassName('title')[0]
             title.innerText = 'Exercício 5.1 - JavaEscript'
+       }
+
+       function paragraphsToUpperCase() {
+            paragraps = document.getElementsByTagName('p')
+            for (let paragrap in paragraps) {
+                paragraps[paragrap].innerText = paragraps[paragrap].innerText.toUpperCase()
+            }
        }
     </script>
   </body>
