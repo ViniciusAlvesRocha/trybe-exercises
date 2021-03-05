@@ -38,6 +38,7 @@ function createDaysOfTheWeek() {
   //Exercício 2:
   function Holiday(buttonHolidayName = 'Feriados') {
       buttonHoliday = document.createElement('button');
+      buttonHoliday.setAttribute('id', 'bt-holidays')
       buttonHoliday.innerText = buttonHolidayName;
 
       //selecionando a div com classe buttons-container:
@@ -50,5 +51,16 @@ function createDaysOfTheWeek() {
 
   //Chamando a função Holiday()
   Holiday()
+
+  //Exercício 3:
+  buttonHoliday = document.getElementById('bt-holidays')
+  buttonHoliday.addEventListener('click', changeBackgroundColorHolidays)
+
+  function changeBackgroundColorHolidays() {
+    holidays = document.getElementsByClassName('holiday')
+    for (let index = 0; index < holidays.length; index += 1) {
+      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  }
 
 
