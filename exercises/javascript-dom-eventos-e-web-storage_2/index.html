@@ -95,6 +95,20 @@
       imgLeftContent.setAttribute('src', 'https://picsum.photos/200')
       imgLeftContent.setAttribute('class', 'small-image')
       divLeftContent.appendChild(imgLeftContent)
+
+      //8.
+      let numbersInFull = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+      let unOrderList = document.createElement('ul')
+      divRightContent.appendChild(unOrderList)
+
+      for (let i = 1; i <= numbersInFull.length; i += 1) {
+        let listItem = document.createElement('li')
+        unOrderList.appendChild(listItem)
+        listItem.setAttribute('id', i)
+        listItem.innerText = numbersInFull[i-1]
+        unOrderList.appendChild(listItem)
+      }
     </script>
   </body>
 </html>
