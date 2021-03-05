@@ -68,6 +68,12 @@
       let div = document.createElement('div')
       div.setAttribute('class','main-content')
       document.body.appendChild(div)
+
+      //3.
+      let divCenterContent = document.createElement('div')
+      divCenterContent.setAttribute('class', 'center-content')
+      let divMainContent = document.getElementsByClassName('main-content')[0]
+      divMainContent.appendChild(divCenterContent)
     </script>
   </body>
 </html>
