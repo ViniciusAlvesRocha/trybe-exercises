@@ -101,4 +101,33 @@ function createDaysOfTheWeek() {
   let buttonFridayId = document.getElementById('btn-friday')
   buttonFridayId.addEventListener('click', changeStyleFriday)
 
+  //Exercicio 6
+  /* Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+  Dica - Propriedade: event.target . */
+
+  //Para receber todos os dias do mês:
+  daysMonth = document.getElementsByClassName('day')
+
+  //Função para aumentar a fonte do List Item:
+  function addZoomLi(event) {
+    event.target.style.fontSize = '40px';
+  }
+
+  function removeZoomLi(event) {
+    event.target.style.fontSize = '20px';
+  }
+
+  //Para adicionar o evento de mouseover:
+  for (let index = 0; index < daysMonth.length; index += 1) {
+    daysMonth[index].addEventListener('mouseover', addZoomLi)
+    daysMonth[index].addEventListener('mouseleave', removeZoomLi)
+  }
+
+
+   
+
+
+
+
+
 
