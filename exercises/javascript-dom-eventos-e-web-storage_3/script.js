@@ -77,4 +77,28 @@ function createDaysOfTheWeek() {
 
   buttonFriday();
 
+  //Exercício 5
+  //Para garantir que a estilização das sextas-feiras permanaçam iguais aos demais dias:
+  let styleButtonFriday = false;
+  function changeStyleFriday() {
+    if (styleButtonFriday) {
+      changeFontColorFriday('119, 119, 119');
+      styleButtonFriday = false;
+    } else {
+      changeFontColorFriday('255, 0, 0');
+      styleButtonFriday = true;
+    }
+
+  }
+
+  function changeFontColorFriday(color) {
+    let liTagsFriday = document.getElementsByClassName('friday');
+    for (let index = 0; index < liTagsFriday.length; index += 1) {
+      liTagsFriday[index].style.color = `rgb(${color})`
+    }
+  }
+
+  let buttonFridayId = document.getElementById('btn-friday')
+  buttonFridayId.addEventListener('click', changeStyleFriday)
+
 
