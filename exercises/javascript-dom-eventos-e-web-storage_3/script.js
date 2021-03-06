@@ -123,6 +123,25 @@ function createDaysOfTheWeek() {
     daysMonth[index].addEventListener('mouseleave', removeZoomLi)
   }
 
+  //Exercicio 7:
+  //Capturando evento do botão ADICIONAR:
+  buttonAddTask = document.getElementById('btn-add');
+  buttonAddTask.addEventListener('click', addTask);
+  
+  function addTask() {
+    inputTask = document.getElementById('task-input');
+    //selecionando div com classe my-tasks
+    divMyTasks = document.getElementsByClassName('my-tasks')[0];
+    spanTask = document.createElement('span');
+    spanTask.innerText = inputTask.value
+    divMyTasks.appendChild(spanTask)
+    inputTask.value = '';
+    breackRow = document.createElement('br')
+    divMyTasks.appendChild(breackRow)
+  }
+  
+
+
 
    
 
