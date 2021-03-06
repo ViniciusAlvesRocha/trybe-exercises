@@ -63,4 +63,18 @@ function createDaysOfTheWeek() {
     }
   }
 
+  //Exercicio 4:
+  function buttonFriday(buttonName = 'Sexta-feira') {
+    let buttonFriday = document.createElement('button');
+    buttonFriday.setAttribute('id', 'btn-friday');
+    buttonFriday.innerText = buttonName;
+
+    //selecionando div buttons-container:
+    divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
+    divButtonsContainer.appendChild(buttonFriday);
+
+  }
+
+  buttonFriday();
+
 
