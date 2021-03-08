@@ -102,9 +102,6 @@ function createDaysOfTheWeek() {
   buttonFridayId.addEventListener('click', changeStyleFriday)
 
   //Exercicio 6
-  /* Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-  Dica - Propriedade: event.target . */
-
   //Para receber todos os dias do mês:
   daysMonth = document.getElementsByClassName('day')
 
@@ -139,14 +136,15 @@ function createDaysOfTheWeek() {
     breackRow = document.createElement('br')
     divMyTasks.appendChild(breackRow)
   }
-  
 
+  //Exercício 8:
+  function addColorInDivTask(color) {
+    //selecionando container de tasks:
+    tasksContainer = document.getElementsByClassName('my-tasks')[0];
+    divColorTask = document.createElement('div');
+    divColorTask.className = 'task'
+    divColorTask.style.backgroundColor = color
+    tasksContainer.appendChild(divColorTask)
+  }
 
-
-   
-
-
-
-
-
-
+  addColorInDivTask('green');
