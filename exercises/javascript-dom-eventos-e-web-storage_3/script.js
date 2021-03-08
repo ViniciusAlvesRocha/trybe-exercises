@@ -148,3 +148,5 @@ function createDaysOfTheWeek() {
   }
 
   addColorInDivTask('green');
+
+  
