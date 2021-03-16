@@ -7,6 +7,7 @@
     <title>Formulário de Currículo</title>
 </head>
 <body>
+    <form action="" method="GET">
     <fieldset>
         <legend>Currículo</legend>
 
@@ -46,6 +47,24 @@
         <input id="radio-apartamento" required type="radio" value="apartamento" name="tipo">
         
     </fieldset>
+
+    <fieldset>
+        <legend>Meu último emprego</legend>
+        
+        <textarea name="resumo" id="idresumo" cols="30" rows="10" max-legth="1000" required></textarea>
+
+        <label for="idcargo">Cargo:</label>
+        <input id="idcargo" type="text" max-length="40" required><br>
+
+        <label for="id-des-cargo">Descrição:</label>
+        <input id="id-des-cargo" type="text" max-length="500" required>
+
+        <label for="id-inicio">Início:</label>
+        <input id="id-inicio" required type="text">
+    </fieldset>
+
+    <input type="submit" value="Enviar"></input>
+</form>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
