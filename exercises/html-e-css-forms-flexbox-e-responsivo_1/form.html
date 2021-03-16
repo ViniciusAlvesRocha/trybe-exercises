@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Currículo</legend>
+
+        <label for="idname">Nome: </label>
+        <input type="text"  maxlength="40" required name="name" id="idname">
+
+        <br>
+
+        <label for="idemail">Email: </label>
+        <input type="email"  maxlength="50" required name="email" id="idemail">
+
+        <br>
+
+        <label for="idcpf">CPF: </label>
+        <input type="number"  maxlength="11" required name="cpf" id="idcpf">
+
+        <br>
+
+        <label for="idendereco">Endereço: </label>
+        <inout type="text" maxlength="200" required name="emdereco" id="idendereco">
+
+        <br>
+
+        <label for="idcidade">Cidade: </label>
+        <inout type="text" maxlength="28" required name="cidade" id="idcidade">
+
+        <br>
+
+        <select name="estado" required id="idestado">
+
+        </select><br>
+
+        <label for="radio-casa">Casa</label>
+        <input id="radio-casa" required type="radio" value="casa" name="tipo">
+
+        <label for="radio-apartamento">Apartamento</label>
+        <input id="radio-apartamento" required type="radio" value="apartamento" name="tipo">
+        
+    </fieldset>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
