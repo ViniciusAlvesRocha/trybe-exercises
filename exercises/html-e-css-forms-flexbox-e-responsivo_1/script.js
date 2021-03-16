@@ -1,32 +1,38 @@
-window.onload = function() {
-  states = ['Acre',
-  'Alagoas',
-  'Amapá',
-  'Amazonas',
-  'Bahia',
-  'Ceará',
-  'Distrito Federal',
-  'Espirito Santo', 
-  'Goiás',
-  'Maranhão',
-  'Mato Grosso',
-  'Mato Grosso do Sul',
-  'Minas Gerais', 
-  'Pará',
-  'Paraíba',
-  'Parabá',
-  'Pernanbuco'];  
-  
-  statesComboBox = document.getElementById('idestado');
-  
-  for (let index = 0; index < states.length; index +=1) {
-    option = document.createElement('option');
-    option.innerText = states[index];
-    if (states[index] === 'Minas Gerais') {
-      option.setAttribute('selected', true);
+function generateOptions() {
+  states = [
+    ' ',
+    'Acre',
+    'Alagoas',
+    'Amapá',
+    'Amazonas',
+    'Bahia',
+    'Ceará',
+    'Distrito Federal',
+    'Espirito Santo', 
+    'Goiás',
+    'Maranhão',
+    'Mato Grosso',
+    'Mato Grosso do Sul',
+    'Minas Gerais', 
+    'Pará',
+    'Paraíba',
+    'Parabá',
+    'Pernanbuco'];  
+    
+    statesComboBox = document.getElementById('idestado');
+    
+    for (let index = 0; index < states.length; index +=1) {
+      option = document.createElement('option');
+      option.innerText = states[index];
+      if (states[index] === ' ') {
+        option.setAttribute('selected', true);
+      }
+      statesComboBox.appendChild(option);
     }
-    statesComboBox.appendChild(option);
-  }
+}
+
+window.onload = function() {
+  generateOptions();
 }
 
 buttonSubmit = document.querySelector('[type="submit"]');
@@ -123,9 +129,8 @@ function getValues() {
   divInfo.push(option);
 
   body = document.getElementsByTagName('body')[0];
-  console.log(body.firstElementChild);
-  body.firstElementChild.remove();
   tagDiv = document.createElement('div');
+  tagDiv.id = 'idInfo';
   body.appendChild(tagDiv);
   for (let index = 0; index < divInfo.length; index += 1) {
     p = document.createElement('p');
@@ -135,3 +140,22 @@ function getValues() {
 
 }
 buttonSubmit.addEventListener('click', getValues)
+
+/* 4 - Criando botão para limpar os valores: */
+buttonClear = document.getElementById('clear');
+function clear() {
+  inputs = document.getElementsByTagName('input');
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value !== 'Enviar') {
+      inputs[index].value = '';
+    }
+  }
+  generateOptions();
+  textArea = document.getElementsByTagName('textarea')[0];
+  textArea.innerText = '';
+  if (document.getElementById('idInfo')) {
+    tagDiv = document.getElementById('idInfo');
+    tagDiv.innerHTML = '';
+  }
+}
+buttonClear.addEventListener('click', clear)
