@@ -20,10 +20,12 @@ window.onload = function() {
   statesComboBox = document.getElementById('idestado');
   
   for (let index = 0; index < states.length; index +=1) {
-  
-  option = document.createElement('option');
-  option.innerText = states[index];
-  statesComboBox.appendChild(option);
+    option = document.createElement('option');
+    option.innerText = states[index];
+    if (states[index] === 'Minas Gerais') {
+      option.setAttribute('selected', true);
+    }
+    statesComboBox.appendChild(option);
   }
 }
 
@@ -54,6 +56,8 @@ function submit(event) {
   verifyDay(date[0]);
   verifyMonth(date[1]);
   verifyYear(date[2]);
+
+
 }
 
 buttonSubmit.addEventListener('click', submit);
@@ -104,3 +108,30 @@ function maskDateDown(el) {
 }
 inputInit.addEventListener('keyup', maskDate);
 inputInit.addEventListener('keydown', maskDateDown)
+
+/* 3 : */
+/* Pegando os valores de cada um dos inputs: */
+function getValues() {
+  divInfo = []
+  inputs = document.getElementsByTagName('input');
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value !== 'Enviar') {
+      divInfo.push(inputs[index].value);
+    }
+  }
+  option = document.getElementsByTagName('select')[0].value;
+  divInfo.push(option);
+
+  body = document.getElementsByTagName('body')[0];
+  console.log(body.firstElementChild);
+  body.firstElementChild.remove();
+  tagDiv = document.createElement('div');
+  body.appendChild(tagDiv);
+  for (let index = 0; index < divInfo.length; index += 1) {
+    p = document.createElement('p');
+    p.innerText = divInfo[index];
+    tagDiv.appendChild(p);
+  }
+
+}
+buttonSubmit.addEventListener('click', getValues)
