@@ -20,6 +20,7 @@ function generateOptions() {
     'Pernanbuco'];  
     
     statesComboBox = document.getElementById('idestado');
+    statesComboBox.innerHTML = '';
     
     for (let index = 0; index < states.length; index +=1) {
       option = document.createElement('option');
