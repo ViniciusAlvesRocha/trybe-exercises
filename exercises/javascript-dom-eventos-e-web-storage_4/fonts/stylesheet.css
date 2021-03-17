@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Black Pink Cursive';
+    src: url('BlackPinkCursive.woff2') format('woff2'),
+        url('BlackPinkCursive.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
