@@ -31,6 +31,8 @@
 
 .aside-container {
     display: flex;
+    align-self: center;
+    flex-grow: 2;
     flex-direction: column;
     margin: 20px;
     flex-basis: 350px;
