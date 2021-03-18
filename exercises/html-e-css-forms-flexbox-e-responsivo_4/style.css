@@ -23,6 +23,7 @@
   
   .menu-container {
     display: flex;
+    align-self: center;
     flex-basis: 500px;
     flex-grow: 2;
   }
