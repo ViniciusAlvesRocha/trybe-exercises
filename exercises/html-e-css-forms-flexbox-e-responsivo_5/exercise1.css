@@ -20,3 +20,9 @@ img {
 figure {
     margin: 0;
 }
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: tomato;
+  }
+}
