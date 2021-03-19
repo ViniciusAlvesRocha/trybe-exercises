@@ -21,9 +21,18 @@ figure {
     margin: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   body {
     background-color: tomato;
     font-size: 1em;
+  }
+
+  img {
+    width: 300px;
+    padding: 0 5px;
+  }
+  #figures {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
