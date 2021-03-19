@@ -43,4 +43,8 @@ figure {
     font-size: 1.4em;
     width: 95%;
   }
+  h1, h2, p {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
