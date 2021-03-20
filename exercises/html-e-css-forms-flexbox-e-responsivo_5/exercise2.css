@@ -84,3 +84,34 @@ footer {
 }
 }
 
+@media screen and (min-width: 700px) {
+  #title {
+    text-align: center;
+    font-size: 3em;
+    width: 500px;
+  }
+
+  #navigator {
+    display: flex;
+    justify-content: space-between;
+  }
+      
+  .aside-one {
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    left: -30px;
+  }
+  
+  .aside-two {
+    width: 90%;
+  }
+  #chapters li:nth-child(odd) {
+    background-color: coral;
+  }
+  
+  footer {
+    font-size: 1em;
+  }
+}
+
