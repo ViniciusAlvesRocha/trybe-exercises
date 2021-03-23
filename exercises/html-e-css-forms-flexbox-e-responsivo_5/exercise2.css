@@ -1,117 +1,16 @@
-html {
-    box-sizing: border-box;
-    font-family: Arial;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
 ul {
   list-style: none;
-
 }
-
-#title {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-#navigator {
-    display: flex;;
-}
-
-#navigator li {
-  padding: 0 20px;
-}
-
-.main-content {
-  background-color: rgb(197, 197, 197);
-}
-
-@media screen and (min-width: 500px){
-#title {
-  text-align: center;
-  font-size: 2em;
-  width: 300px;
-}
-    
-#navigator {
-  justify-content: center;
-}
-
-#chapters li:nth-child(odd) {
-  background-color: rgb(204, 253, 255);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-p {
-  width: 85%;
-  margin: 0 auto;
-}
-
-#title-chapiter {
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  text-align: center;
-  font-size: 1em !important;
-}
-
-.aside-two h2 , .aside-one h2{
-  display: flex;
-  justify-content: center;
-}
-
-.main-content {
-  font-size: 2em;
-  padding-bottom: 20px;
-  margin-bottom: 50px;
-}
-
-#copyright {
-    text-align: center;
-}
-
-footer {
-  font-size: .5em;
-}
-}
-
-@media screen and (min-width: 700px) {
-  #title {
-    text-align: center;
-    font-size: 3em;
-    width: 500px;
+@media screen and (min-width: 1000px) {
+  #asides {
+    width: 30%;
   }
-
-  #navigator {
+  #main {
+    margin: 0 100px;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
   }
-      
-  .aside-one {
-    justify-content: center;
-    width: 80%;
-    position: relative;
-    left: -30px;
-  }
-  
-  .aside-two {
-    width: 90%;
-  }
-  #chapters li:nth-child(odd) {
-    background-color: coral;
-  }
-  
-  footer {
-    font-size: 1em;
+
+  .main-content {
   }
 }
-
