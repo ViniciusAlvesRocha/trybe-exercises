@@ -23,6 +23,19 @@ const lesson1 = {
     objAux[key] = value
     console.log(Object.assign(lesson2, objAux));
   }
-
   adicionarTurno(lesson2, key = 'turno', value = 'tarde');
+
+  /* 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro. */
+  const listKeys = (object) => {
+    console.log(Object.keys(object));
+  }
+
+  listKeys(lesson1);
+
+  /* 3 - Crie uma função para mostrar o tamanho de um objeto. */
+  const objectLength = (object) => {
+    console.log(Object.keys(object).length);
+  }
+
+  objectLength(lesson3);
 
