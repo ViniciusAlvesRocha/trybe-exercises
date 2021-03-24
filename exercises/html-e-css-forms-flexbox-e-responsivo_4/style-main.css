@@ -22,6 +22,7 @@
 }
 
 .card-container div {
+  flex-grow: 1;
   align-items: center;
   background-color: #5C687C;
   border: black solid 1px;
