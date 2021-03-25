@@ -74,3 +74,11 @@ const lesson1 = {
 
 getTotalStudents(allLessons(lesson1, lesson2, lesson3));
 
+/* 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.  */
+
+const getValueByNumber = (lesson, key) => {
+  let value = Object.keys(lesson)[key];
+  return value;
+}
+
+console.log(getValueByNumber(lesson1, 0))
