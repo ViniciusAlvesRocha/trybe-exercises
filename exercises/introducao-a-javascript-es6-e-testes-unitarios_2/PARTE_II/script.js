@@ -116,4 +116,8 @@ const getQtdStudantsMathematics = (objects) => {
 
 console.log(getQtdStudantsMathematics(allLessons(lesson1, lesson2, lesson3)));
 
+/* 2 - Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. */
+
+
+
 
