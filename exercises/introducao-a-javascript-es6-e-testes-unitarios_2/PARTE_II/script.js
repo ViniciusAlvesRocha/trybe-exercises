@@ -99,3 +99,21 @@ const verifyPair = (lesson, key, value) => {
 }
 
 console.log(verifyPair(lesson1, 'professor', 'Maria Clara'));
+
+/* Exercícios BONUS:
+1 - Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+*/
+
+const getQtdStudantsMathematics = (objects) => {
+  let sum = 0;
+  for (let key in objects) {
+    if (objects[key].materia === 'Matemática') {
+      sum += objects[key].numeroEstudantes;
+    }
+  }
+  return sum;
+}
+
+console.log(getQtdStudantsMathematics(allLessons(lesson1, lesson2, lesson3)));
+
+
