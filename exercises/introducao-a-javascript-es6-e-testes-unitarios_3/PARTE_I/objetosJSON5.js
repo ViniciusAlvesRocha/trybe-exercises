@@ -17,3 +17,5 @@ const obj3 = {
 
 // implemente seus testes aqui
 assert.deepStrictEqual(obj1, obj2, 'Os objetos não são iguais');
+
+assert.deepStrictEqual(obj1, obj3, 'Os objetos não são iguais');
