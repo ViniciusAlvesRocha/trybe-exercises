@@ -15,7 +15,10 @@ const promise = new Promise((resolve, reject) => {
   console.log(dividedBy(sum));
   return console.log('Promise resolvida')
 })
-.catch(() => console.log('Promise rejeitada'));
+.catch(() => {
+  console.log("É mais de oito mil! Essa promise deve estar quebrada!");  
+  return console.log('Promise rejeitada')
+});
 
 const dividedBy = (sum) => {
   const dividedByNumbers = [2, 3, 5, 10];
