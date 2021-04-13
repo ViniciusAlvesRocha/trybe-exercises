@@ -7,11 +7,11 @@ const promise = new Promise((resolve, reject) => {
   }
   sum = numbersArray.reduce((accumulator, currentValue) => accumulator+currentValue);
   if (sum < 8000){
-    return resolve(sum);
+    return resolve(number);
   }
   reject(number);
 })
-.then((sum) => {
+.then(() => {
   console.log(dividedBy(sum));
   return console.log('Promise resolvida')
 })
@@ -19,5 +19,5 @@ const promise = new Promise((resolve, reject) => {
 
 const dividedBy = (sum) => {
   const dividedByNumbers = [2, 3, 5, 10];
-  return dividedByNumbers.map((dividedNumber) => sum / dividedNumber);
+  return dividedByNumbers.map((dividedNumber) => sum/dividedNumber);
 }
