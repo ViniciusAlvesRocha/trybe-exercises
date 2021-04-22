@@ -10,7 +10,7 @@ const getRepos = (url) => {
     });
 };
 
-describe('5 - verificando se os repositórios sd-01-week4-5-project-todo-list e sd-01-week4-5-project-meme-generator se encontram nessa lista', () => {
+describe('4 - verificando se os repositórios sd-01-week4-5-project-todo-list e sd-01-week4-5-project-meme-generator se encontram nessa lista', () => {
   it ('O repositorio sd-01-week4-5-project-todo-list está presente na lista', () => {
     expect.assertions(1);
     return getRepos(urlTrybe).then(repositories => expect(repositories).toContain('sd-01-week4-5-project-todo-list'));
